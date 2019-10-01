@@ -9,3 +9,7 @@ cd LC101-HTTP-FORMS
 
 ## Instructions:
 We will work through a few examples of HTTP and FORMS
+
+### Mini Activity to close out:
+<!-- Create a form that will post to the supplied API -->
+<!-- Check to see if your results appeared on the screen -->

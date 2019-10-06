@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>LC101 HTTP Forms Practice</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/application.css'>
-    
-</head>
-<body>
-    <form id="submissionForm">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/application.css"
+    />
+  </head>
+  <body>
+    <form
+      id="submissionForm"
+      method="POST"
+      action="http://localhost:5000/student"
+    >
+      <fieldset>
         <label for="first_name">First Name</label>
-        <input id="first_name">
+        <input id="first_name" name="firstName" />
+        <label for="last_name">Last Name</label>
+        <input id="last_name" name="lastName" />
+      </fieldset>
+      <fieldset>
+        <label for="favorite_food">Favorite Food</label>
+        <input id="favorite_food" name="favoriteFood" />
+        <label for="favorite_animal">Favorite Animal</label>
+        <input id="favorite_animal" name="favoriteAnimal" />
+      </fieldset>
+      <button>Submit</button>
     </form>
-</body>
+  </body>
 </html>
 
 <!-- 1. Create a form outline structure-->
@@ -24,4 +43,4 @@
 <!-- 4. Add a URL target to the form -->
 <!-- 5. Add a field for favorite animal. Add a field for favorite food -->
 <!-- 5.5 git add and commit -->
-<!-- 6. Send a post request to the URL provided. Your data should appear on the screen. -->
+<!-- 6. Send a post request, by submitting the form, to the URL provided. -->
